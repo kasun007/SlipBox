@@ -1,8 +1,8 @@
 //
 //  Persistence.swift
-//  SlipBox
+//  Test
 //
-//  Created by Kasun Wickramanayake on 9/07/23.
+//  Created by Kasun Wickramanayake on 11/07/23.
 //
 
 import CoreData
@@ -31,7 +31,7 @@ struct PersistenceController {
     let container: NSPersistentCloudKitContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentCloudKitContainer(name: "SlipBox")
+        container = NSPersistentCloudKitContainer(name: "Test")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
