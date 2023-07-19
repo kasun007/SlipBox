@@ -24,6 +24,36 @@ extension Note {
         }
     }
     
+    
+    
+    var status:Status {
+        
+        get{
+            
+            if let rawStatus = status_,
+               let status = Status(rawValue: rawStatus){
+                
+                return status
+            }
+            
+            
+            else{
+                return Status.draft
+                
+                
+            }
+        }
+        
+        set{
+            
+            status_ = newValue.rawValue
+            
+            
+            
+        }
+        
+    }
+    
     convenience init (title :String,context :NSManagedObjectContext){
         self.init(context:context)
         self.title = title
@@ -40,7 +70,7 @@ extension Note {
             
             
         }
-    
+        
     }
     
     public override func awakeFromInsert() {
@@ -54,4 +84,11 @@ extension Note {
         
         return request
     }
+    
+    static func delete(note :Note){
+        
+        guard  let context = note.managedObjectContext else {return}
+        context.delete(note)
+    }
+    
 }

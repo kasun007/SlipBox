@@ -61,7 +61,7 @@ struct PersistenceController {
     
     func save(){
         let context = container.viewContext
-        guard context.hasChanges  else{ return }
+        guard context.hasChanges  else{ return  }
                 
                 do{
                     try context.save()
@@ -74,6 +74,13 @@ struct PersistenceController {
                 }
         
         
+        
+    }
+    
+    
+    
+    static func createEmptyStore() -> PersistenceController{
+         return PersistenceController(inMemory: true)
         
     }
 }

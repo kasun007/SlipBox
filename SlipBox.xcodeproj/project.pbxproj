@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981498A82A6342CE0049E9F3 /* NotesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981498A72A6342CE0049E9F3 /* NotesTest.swift */; };
 		983DA2032A5A4C21004EFFB3 /* SlipBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DA2022A5A4C21004EFFB3 /* SlipBoxApp.swift */; };
 		983DA2052A5A4C21004EFFB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DA2042A5A4C21004EFFB3 /* ContentView.swift */; };
 		983DA2072A5A4C23004EFFB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983DA2062A5A4C23004EFFB3 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		983DA2262A5A4C24004EFFB3 /* SlipBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DA2252A5A4C24004EFFB3 /* SlipBoxUITestsLaunchTests.swift */; };
 		983DA2342A5C02B4004EFFB3 /* Note+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DA2332A5C02B4004EFFB3 /* Note+Helper.swift */; };
 		983DA2382A5D3406004EFFB3 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DA2372A5D3406004EFFB3 /* NoteDetailView.swift */; };
+		986FBABB2A6742A6008AD0CF /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FBABA2A6742A6008AD0CF /* Status.swift */; };
 		98C655FA2A5E038A004C0691 /* NSpredicate+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C655F92A5E038A004C0691 /* NSpredicate+Helper.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		981498A72A6342CE0049E9F3 /* NotesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTest.swift; sourceTree = "<group>"; };
 		983DA1FF2A5A4C21004EFFB3 /* SlipBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlipBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		983DA2022A5A4C21004EFFB3 /* SlipBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipBoxApp.swift; sourceTree = "<group>"; };
 		983DA2042A5A4C21004EFFB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		983DA2252A5A4C24004EFFB3 /* SlipBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		983DA2332A5C02B4004EFFB3 /* Note+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Helper.swift"; sourceTree = "<group>"; };
 		983DA2372A5D3406004EFFB3 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		986FBABA2A6742A6008AD0CF /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		98C655F92A5E038A004C0691 /* NSpredicate+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSpredicate+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +133,7 @@
 		983DA2182A5A4C24004EFFB3 /* SlipBoxTests */ = {
 			isa = PBXGroup;
 			children = (
+				981498A72A6342CE0049E9F3 /* NotesTest.swift */,
 				983DA2192A5A4C24004EFFB3 /* SlipBoxTests.swift */,
 			);
 			path = SlipBoxTests;
@@ -147,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				983DA2332A5C02B4004EFFB3 /* Note+Helper.swift */,
+				986FBABA2A6742A6008AD0CF /* Status.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				983DA20C2A5A4C23004EFFB3 /* Persistence.swift in Sources */,
 				983DA20F2A5A4C23004EFFB3 /* SlipBox.xcdatamodeld in Sources */,
 				983DA2342A5C02B4004EFFB3 /* Note+Helper.swift in Sources */,
+				986FBABB2A6742A6008AD0CF /* Status.swift in Sources */,
 				983DA2382A5D3406004EFFB3 /* NoteDetailView.swift in Sources */,
 				983DA2052A5A4C21004EFFB3 /* ContentView.swift in Sources */,
 				983DA2032A5A4C21004EFFB3 /* SlipBoxApp.swift in Sources */,
@@ -305,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				983DA21A2A5A4C24004EFFB3 /* SlipBoxTests.swift in Sources */,
+				981498A82A6342CE0049E9F3 /* NotesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -437,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -461,10 +469,12 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartLeaderApp.SlipBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,10 +502,12 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartLeaderApp.SlipBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,12 +528,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartLeaderApp.SlipBoxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlipBox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SlipBox";
 			};
 			name = Debug;
@@ -534,12 +551,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartLeaderApp.SlipBoxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlipBox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SlipBox";
 			};
 			name = Release;
