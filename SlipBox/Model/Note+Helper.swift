@@ -35,8 +35,6 @@ extension Note {
                 
                 return status
             }
-            
-            
             else{
                 return Status.draft
                 
@@ -47,11 +45,21 @@ extension Note {
         set{
             
             status_ = newValue.rawValue
-            
-            
-            
         }
         
+    }
+    var formattedBodyText: NSAttributedString {
+        get {
+            formattedBodyText_?.toAttributedString() ?? NSAttributedString(string: "")
+        }
+        set {
+            formattedBodyText_ =  newValue.toData()
+            bodyText_ = newValue.string.lowercased()
+        }
+    }
+    
+    var bodyText: String {
+        get { bodyText_ ?? "" }
     }
     
     convenience init (title :String,context :NSManagedObjectContext){
@@ -72,7 +80,7 @@ extension Note {
         }
         
     }
-    
+  
     public override func awakeFromInsert() {
         self.creationDate = Date()
     }

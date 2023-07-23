@@ -19,7 +19,10 @@
 		983DA2262A5A4C24004EFFB3 /* SlipBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DA2252A5A4C24004EFFB3 /* SlipBoxUITestsLaunchTests.swift */; };
 		983DA2342A5C02B4004EFFB3 /* Note+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DA2332A5C02B4004EFFB3 /* Note+Helper.swift */; };
 		983DA2382A5D3406004EFFB3 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DA2372A5D3406004EFFB3 /* NoteDetailView.swift */; };
+		984C8C5E2A6CBEE80030467C /* NSAttributedString+Data+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984C8C5D2A6CBEE70030467C /* NSAttributedString+Data+Helper.swift */; };
+		984C8C602A6CC2E00030467C /* TextViewMacosWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984C8C5F2A6CC2E00030467C /* TextViewMacosWrapper.swift */; platformFilters = (macos, ); };
 		986FBABB2A6742A6008AD0CF /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FBABA2A6742A6008AD0CF /* Status.swift */; };
+		986FBABE2A67AA58008AD0CF /* TextViewIOSWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FBABD2A67AA58008AD0CF /* TextViewIOSWrapper.swift */; platformFilter = ios; };
 		98C655FA2A5E038A004C0691 /* NSpredicate+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C655F92A5E038A004C0691 /* NSpredicate+Helper.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +60,10 @@
 		983DA2252A5A4C24004EFFB3 /* SlipBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		983DA2332A5C02B4004EFFB3 /* Note+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Helper.swift"; sourceTree = "<group>"; };
 		983DA2372A5D3406004EFFB3 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		984C8C5D2A6CBEE70030467C /* NSAttributedString+Data+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Data+Helper.swift"; sourceTree = "<group>"; };
+		984C8C5F2A6CC2E00030467C /* TextViewMacosWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewMacosWrapper.swift; sourceTree = "<group>"; };
 		986FBABA2A6742A6008AD0CF /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		986FBABD2A67AA58008AD0CF /* TextViewIOSWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIOSWrapper.swift; sourceTree = "<group>"; };
 		98C655F92A5E038A004C0691 /* NSpredicate+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSpredicate+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +115,7 @@
 		983DA2012A5A4C21004EFFB3 /* SlipBox */ = {
 			isa = PBXGroup;
 			children = (
+				986FBABC2A67A80C008AD0CF /* views */,
 				98C655F82A5E0304004C0691 /* Core Data Helper */,
 				983DA2322A5C0296004EFFB3 /* Model */,
 				983DA2022A5A4C21004EFFB3 /* SlipBoxApp.swift */,
@@ -157,11 +164,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		986FBABC2A67A80C008AD0CF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				986FBABD2A67AA58008AD0CF /* TextViewIOSWrapper.swift */,
+				984C8C5F2A6CC2E00030467C /* TextViewMacosWrapper.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		98C655F82A5E0304004C0691 /* Core Data Helper */ = {
 			isa = PBXGroup;
 			children = (
 				983DA20B2A5A4C23004EFFB3 /* Persistence.swift */,
 				98C655F92A5E038A004C0691 /* NSpredicate+Helper.swift */,
+				984C8C5D2A6CBEE70030467C /* NSAttributedString+Data+Helper.swift */,
 			);
 			path = "Core Data Helper";
 			sourceTree = "<group>";
@@ -297,11 +314,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				983DA20C2A5A4C23004EFFB3 /* Persistence.swift in Sources */,
+				984C8C5E2A6CBEE80030467C /* NSAttributedString+Data+Helper.swift in Sources */,
 				983DA20F2A5A4C23004EFFB3 /* SlipBox.xcdatamodeld in Sources */,
 				983DA2342A5C02B4004EFFB3 /* Note+Helper.swift in Sources */,
 				986FBABB2A6742A6008AD0CF /* Status.swift in Sources */,
 				983DA2382A5D3406004EFFB3 /* NoteDetailView.swift in Sources */,
+				984C8C602A6CC2E00030467C /* TextViewMacosWrapper.swift in Sources */,
 				983DA2052A5A4C21004EFFB3 /* ContentView.swift in Sources */,
+				986FBABE2A67AA58008AD0CF /* TextViewIOSWrapper.swift in Sources */,
 				983DA2032A5A4C21004EFFB3 /* SlipBoxApp.swift in Sources */,
 				98C655FA2A5E038A004C0691 /* NSpredicate+Helper.swift in Sources */,
 			);
@@ -474,7 +494,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartLeaderApp.SlipBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,7 +527,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartLeaderApp.SlipBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
